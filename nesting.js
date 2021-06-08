@@ -51,7 +51,9 @@ var employees = [
 */
 
 //Code Here
-
+const employeeUpdater = () =>{
+  employees.map(element => element.firstName === 'Von')
+  }
 
 
 ////////// PROBLEM 2 //////////

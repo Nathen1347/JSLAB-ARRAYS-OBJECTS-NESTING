@@ -20,7 +20,10 @@ var carDetails = {
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
-
+const {color} = carDetails
+const {make} = carDetails
+const {model} = carDetails
+const {year} = carDetails
 //Code Here
 
 
@@ -35,7 +38,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  const {title , firstName, lastName} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,9 +57,20 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
-
+const totalPopulation = (obj) =>{
+  obj = {
+    utah: 1,
+    california: 2,
+    texas: 3,
+    arizona: 4
+  }
+  const {utah, california, texas, arizona} = obj;
+  let sum = 0
+  for(let key in obj){
+    sum += obj[key]
+    return sum;
+  }
+}
 ////////// PROBLEM 4 //////////
 
 /*
@@ -68,7 +82,17 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+const ingredients = (obj) => {
+  obj = {
+  carb: "",
+  fat: "",
+  protein: ""
+  }
+  const {carb, fat, protein} = obj;
+  let newArray = [];
+  newArray.push(obj);
+  return newArray;
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,7 +110,13 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+const largeNumbers = ({}) => {
+  obj = {
+    first: 1,
+    second: 2,
+    third: 3
+  }
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -98,5 +128,14 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+const numberGroups = ({}) => {
+  obj = {
+    a: [1,2,3,4,5,4],
+    b: [5,4,3,2,1],
+    c: [2,4,6,8,10,12,14]
+  }
+  for( let key in obj){
+    
+  }
+}
 

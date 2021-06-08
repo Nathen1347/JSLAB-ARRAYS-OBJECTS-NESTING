@@ -11,25 +11,25 @@
   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// var values = {
-//   one: 'These',
-//   two: ' are',
-//   three: ' the',
-//   four: ' property',
-//   five: ' values.'
-// } 
+var values = {
+  one: 'These',
+  two: ' are',
+  three: ' the',
+  four: ' property',
+  five: ' values.'
+} 
 
-// for(var key in values) {
-//   console.log(values[key])
-// }
+for(var key in values) {
+  console.log(values[key])
+}
 
 /*
   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// for(var key in values) {
-//   console.log(key)
-// }
+for(var key in values) {
+  console.log(key)
+}
 
 
 
@@ -39,10 +39,11 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
+function showValues( values ) {
+  for(let key in values) {
+    `${values[key]}`;
+    }
 }
-
 
 
 ////////// PROBLEM 2 //////////
@@ -54,8 +55,15 @@ function showValues( obj ) {
 */
 
 //Code Here
-
-
+function greaterThan10(object){
+      for(let key in object){
+        if(object[key] > 10){
+        object[key] =  0;
+      } else {
+        object[key];
+      }
+    }
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -66,7 +74,11 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+function double(obj){
+  for(let key in obj){
+    return obj[key] * 2;
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
